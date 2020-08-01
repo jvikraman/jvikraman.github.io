@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `jvikraman`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Jegadeesh Vikramanthampi`,
+      summary: `My personal blog.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `My personal blog.`,
+    siteUrl: `https://jvikraman.com/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `j_vikraman`,
     },
   },
   plugins: [
@@ -42,7 +42,13 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          `gatsby-remark-prismjs`,
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              inlineCodeMarker: "÷",
+            },
+            alias: { sh: "bash", js: "javascript" },
+          },
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
         ],
