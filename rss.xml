@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jvikraman]]></title><description><![CDATA[My personal blog.]]></description><link>https://jvikraman.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 06 Aug 2020 05:26:35 GMT</lastBuildDate><item><title><![CDATA[🧗 Getting a grip on Javascript's `this` keyword]]></title><description><![CDATA[A few mental models on the intricacies around javascript’s this keyword. Javascript’s this context The javascript  keyword behaves…]]></description><link>https://jvikraman.com/javascript-this/</link><guid isPermaLink="false">https://jvikraman.com/javascript-this/</guid><pubDate>Wed, 05 Aug 2020 15:19:00 GMT</pubDate><content:encoded>&lt;h3&gt;A few mental models on the intricacies around javascript’s &lt;em&gt;this&lt;/em&gt; keyword.&lt;/h3&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[jvikraman]]></title><description><![CDATA[My personal blog.]]></description><link>https://jvikraman.com</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 11 Aug 2020 18:03:21 GMT</lastBuildDate><item><title><![CDATA[🧗 Getting a grip on Javascript's `this` keyword]]></title><description><![CDATA[A few mental models on the intricacies around javascript’s this keyword. Javascript’s this context The javascript  keyword behaves…]]></description><link>https://jvikraman.com/javascript-this/</link><guid isPermaLink="false">https://jvikraman.com/javascript-this/</guid><pubDate>Wed, 05 Aug 2020 15:19:00 GMT</pubDate><content:encoded>&lt;h3&gt;A few mental models on the intricacies around javascript’s &lt;em&gt;this&lt;/em&gt; keyword.&lt;/h3&gt;
 &lt;h3&gt;Javascript’s &lt;em&gt;this&lt;/em&gt; context&lt;/h3&gt;
 &lt;p&gt;The javascript &lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;/code&gt; keyword behaves &lt;em&gt;differently in different contexts&lt;/em&gt;. It’s &lt;em&gt;not the same in browser vs node environments&lt;/em&gt;. For e.g. when used outside of a function, &lt;em&gt;this&lt;/em&gt; points to the &lt;em&gt;global&lt;/em&gt; object - in browser environments, that would be the &lt;em&gt;window&lt;/em&gt; object.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight has-highlighted-lines&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// In `browser` environment.&lt;/span&gt;
@@ -633,4 +633,366 @@ fastestPromise
 &lt;p&gt;🎉 And that’s a &lt;em&gt;wrap&lt;/em&gt; on our &lt;em&gt;quick 101 on Javascript Promises&lt;/em&gt;. These notes are an &lt;em&gt;inspiration&lt;/em&gt; from &lt;a href=&quot;https://mariusschulz.com/&quot;&gt;Marius Schulz’s&lt;/a&gt; amazing &lt;a href=&quot;https://egghead.io/courses/javascript-promises-in-depth&quot;&gt;egghead course on this topic&lt;/a&gt;. His courses are a &lt;em&gt;great resource&lt;/em&gt; for anyone learning Javascript. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[📚 Markdown Reference]]></title><description><![CDATA[If you haven’t used markdown for a while, it’s common that you forgot the syntax and the nuances of the language 🙄. Frankly speaking, with…]]></description><link>https://jvikraman.com/markdown-reference/</link><guid isPermaLink="false">https://jvikraman.com/markdown-reference/</guid><pubDate>Wed, 29 Jul 2020 00:20:00 GMT</pubDate><content:encoded>&lt;p&gt;If you haven’t used markdown for a while, it’s common that you forgot the syntax and the nuances of the language 🙄. Frankly speaking, with markdown, there’s more than one way to achieve an outcome for e.g. headings.&lt;/p&gt;
 &lt;p&gt;I know what you’re saying…for god’s sake, why don’t you have a quick reference guide or something and that’s exactly what i did over in Github.&lt;/p&gt;
 &lt;p&gt;Here you go -&gt; &lt;a href=&quot;https://github.com/jvikraman/markdown-cheatsheet&quot;&gt;Markdown Cheatsheet&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;🤗 Phew! one less thing to worry about.&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;🤗 Phew! one less thing to worry about.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[🛠 Using Regex in Javascript]]></title><description><![CDATA[A quick 101 on the fundamentals of regular expressions and how to use them in Javascript. Two common ways to use regular expressions…]]></description><link>https://jvikraman.com/javascript-regex/</link><guid isPermaLink="false">https://jvikraman.com/javascript-regex/</guid><pubDate>Sun, 21 Jun 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;A quick &lt;em&gt;101 on the fundamentals&lt;/em&gt; of regular expressions and &lt;em&gt;how to use them in Javascript&lt;/em&gt;.&lt;/p&gt;
+&lt;h3&gt;Two &lt;em&gt;common ways&lt;/em&gt; to use regular expressions&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Constructor form&lt;/em&gt; -&gt; for e.g. &lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;RegExp&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;pattern&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;flags&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Literal form&lt;/em&gt; -&gt; &lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;pattern&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;flags&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Example:&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight has-highlighted-lines&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// Input string&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; str &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;What is what?&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Constructor form&lt;/span&gt;
+&lt;span class=&quot;gatsby-highlight-code-line&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;RegExp&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;wh&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// Literal form&lt;/span&gt;
+&lt;span class=&quot;gatsby-highlight-code-line&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/wh/&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// Execution options:&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// test() method - returns true/false about a potential match&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// exec() method - returns an array containing the matches &lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// alongwith the match index and original input. &lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// Running `exec` multiple times will keep finding&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// subsequent occurrences.&lt;/span&gt;
+
+&lt;span class=&quot;gatsby-highlight-code-line&quot;&gt;regex&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;str&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token comment&quot;&gt;// Output: true&lt;/span&gt;
+
+&lt;span class=&quot;gatsby-highlight-code-line&quot;&gt;regex&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;exec&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;str&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token comment&quot;&gt;// Output: [ &apos;wh&apos;, index: 8, input: &apos;What is what?&apos;, groups: undefined ]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Additional &lt;em&gt;search options&lt;/em&gt; using &lt;em&gt;flags&lt;/em&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Include &lt;code class=&quot;language-text&quot;&gt;g&lt;/code&gt; flag to &lt;em&gt;search globally&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;i&lt;/code&gt; for &lt;em&gt;case insensitive search&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;m&lt;/code&gt; to &lt;em&gt;include multi-lines&lt;/em&gt; in search&lt;/li&gt;
+&lt;li&gt;For e.g. &lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/wh/gim&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Usage with &lt;em&gt;String.prototype&lt;/em&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-js&quot;&gt;str&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;match&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;regex&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt; -&gt; returns an &lt;em&gt;array of all the matches&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-js&quot;&gt;str&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;regex&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;str&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;zzz&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt; -&gt; &lt;em&gt;replace matches&lt;/em&gt; with preferred characters&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-js&quot;&gt;str&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;search&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;regex&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt; -&gt; returns the &lt;em&gt;index of the first match&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3&gt;Using &lt;em&gt;plain-text patterns&lt;/em&gt;&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight has-highlighted-lines&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// Input string&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; str &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;Blake ate the cake.&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;gatsby-highlight-code-line&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/.ak/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/span&gt;
+str&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;match&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;regex&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; 
+&lt;span class=&quot;token comment&quot;&gt;// Output: [ &apos;lak&apos;, &apos;cak&apos; ]&lt;/span&gt;
+
+str&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;regex&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;str&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;XX&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// Output: BXXe ate the XXe.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;In the above example the dot/period &lt;code class=&quot;language-text&quot;&gt;.&lt;/code&gt; &lt;em&gt;meta character&lt;/em&gt; preceeding the pattern &lt;code class=&quot;language-text&quot;&gt;ak&lt;/code&gt; is trying to find a match where characters &lt;code class=&quot;language-text&quot;&gt;ak&lt;/code&gt; is &lt;em&gt;preceded by exactly one character&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Use &lt;em&gt;more dots&lt;/em&gt; to find &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt; occurrences of characters preceeding &lt;code class=&quot;language-text&quot;&gt;ak&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;.&lt;/code&gt; meta character &lt;em&gt;finds characters, digits, non-breaking spaces, dashes but not line-breaks&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;✋ A note on &lt;em&gt;escape sequences&lt;/em&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;To &lt;em&gt;escape a character/sequence&lt;/em&gt; anytime, use the &lt;em&gt;special backslash&lt;/em&gt; &lt;code class=&quot;language-text&quot;&gt;\&lt;/code&gt; character&lt;/li&gt;
+&lt;li&gt;In the above example, to find the &lt;code class=&quot;language-text&quot;&gt;.&lt;/code&gt; character, use the expression &lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/\.ak/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3&gt;Find &lt;em&gt;repeating patterns using quantifiers&lt;/em&gt;&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// Input string&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; str &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;ddddddd&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Find 4 occurrences of char `d` in a row&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/dddd/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Same as above, but using quantifier {4}&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/d{4}/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Find at least 3 matches of `d` on to infinity&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/d{3,}/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Find at least 3 matches of `d` up to 4&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/d{3,4}/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;✋ Special patterns&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;char&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;g&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;or&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;char&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;g&lt;/code&gt; -&gt; &lt;em&gt;zero matches to infinity&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;char&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;g&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;or&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;char&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;g&lt;/code&gt; -&gt; &lt;em&gt;one or more matches to infinity&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;char&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;g&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;or&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;char&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;g&lt;/code&gt; -&gt; &lt;em&gt;zero or one match&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Example:&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// Find 0 to infinity - matches empty spaces as well&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/d{0,}/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Short-hand version&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/d*/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; 
+
+&lt;span class=&quot;token comment&quot;&gt;// Since there&apos;s no `c` char, matches all empty spaces&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/c*/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Find 1 or more occurrences to infinity incl. spaces&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/d+/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Find 0 or 1 occurrence incl. spaces&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/d?/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// A more real-world scenario - finding valid web addresses&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; str &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;http://github.com
+some text
+http://
+https://www.github.com&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/https{0,1}:\/\/.{1,}/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Short-hand version&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/https?:\/\/.+/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; 
+&lt;span class=&quot;token comment&quot;&gt;// Output: [ &apos;http://github.com&apos;, &apos;https://www.github.com&apos; ]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;hr&gt;
+&lt;h3&gt;Character classes&lt;/h3&gt;
+&lt;p&gt;Identify &lt;em&gt;specific sets of optional characters&lt;/em&gt; we are &lt;em&gt;willing to accept&lt;/em&gt; as part of matches.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// Input string&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; str &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;hot lot Dot !ot 0ot&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Find occurrences of char `ot` preceeded by either `h` or `l`&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/[hl]ot/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// Output: XX XX Dot !ot 0ot&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Find occurrences of char `ot` not preceeded by `h` or `l`&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/[^hl]ot/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// Output: hot lot XX XX XX&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Character ranges&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/[a-z]ot/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// Output: XX XX Dot !ot 0ot&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/[a-zA-Z]/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// Output: XXXXXX XXXXXX XXXXXX !XXXX 0XXXX&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/[a-kA-Z]/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// Output: XXot lot XXot !ot 0ot&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/[^a-kA-Z]ot/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// Output: hot XX Dot XX XX&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/[a-zA-Z0-9]ot/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// Output: XX XX XX !ot XX&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/[a-zA-Z0-9!]ot/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// Output: XX XX XX XX XX&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;✋ Short-hand versions&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// Input string&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; str &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;Blue #220 10.5%&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Match all characters except symbols, spaces&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// digits &amp;amp; unicode characters&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/[a-zA-Z0-9]/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// (or) use short-hand /\w/g;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// Output: XXXXXXXX #XXXXXX XXXX.XX%&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Match all digits&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/\d/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// Output: Blue #XXXXXX XXXX.XX%&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Match all white-space&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/\s/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// Output: BlueXX#220XX10.5%&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// --- Negation ---&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// Match only white-space and symbols&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/[^\w]/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// (or) use short-hand /\W/g;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// Output: BlueXXXX220XX10XX5XX&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Match everything that&apos;s not a digit&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/[^\d]/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// (or) use short-hand /\D/g;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// Output: XXXXXXXXXXXX220XX10XX5XX&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Match everything that&apos;s not white-spaces&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/[^\s]/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// (or) use short-hand /\S/g;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// Output: XXXXXXXX XXXXXXXX XXXXXXXXXX&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;hr&gt;
+&lt;h3&gt;Capture groups&lt;/h3&gt;
+&lt;p&gt;Search for matches by &lt;em&gt;specifying terms within parens&lt;/em&gt; for e.g. &lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token regex&quot;&gt;/&amp;lt;primary text&gt;(secondary|tertiary)/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;Example:&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight has-highlighted-lines&quot; data-language=&quot;js&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber 0&quot; class=&quot;language-js line-numbers&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// Input string&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; str &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;hello
+helloworld
+hellothere
+hellohi&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Search for matches where `hello` is followed by&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// either `world` or `hi`&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/hello(world|hi)/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;/* Output:
+    hello 
+    XX 
+    hellothere 
+    XX
+*/&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Same as above, but search for 0 or 1 occurrence&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// using quantifier&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/hello(world|hi)?/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;/* Output:
+    XX 
+    XX 
+    XXthere 
+    XX 
+*/&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// A more real-world example - capturing area codes&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// from phone numbers&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; str &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; 
+  &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;800-234-4321
+  (444) 342-7861
+  7778976754&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// $1 in the following `console.log` @line 44 is getting&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// a reference to the capture group&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/\(?(\d{3})\)?[\s-]?\d{3}[\s-]?\d{4}/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// If you don&apos;t need to store that reference&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// use `?:` inside the capture group. for e.g.&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/\(?(?:\d{3})\)?[\s-]?\d{3}[\s-]?\d{4}/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;gatsby-highlight-code-line&quot;&gt;console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;str&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;regex&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;area code: $1&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token comment&quot;&gt;/* Output:
+    area code: 800
+    area code: 444
+    area code: 777
+*/&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;hr&gt;
+&lt;h3&gt;Lookaheads&lt;/h3&gt;
+&lt;p&gt;Similar to capture groups, &lt;em&gt;but if you want to exclude the capture group result&lt;/em&gt;.&lt;/p&gt;
+&lt;h3&gt;Example:&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// Input string&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; str &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; 
+  &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;hello
+  helloworld
+  hellothere
+  hellohi&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Positive lookahead - i.e. find matches of `hello`&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// followed by either `world` or `hi`&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/hello(?=world|hi)/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;/* Output:
+    hello 
+    XXworld 
+    hellothere 
+    XXhi 
+*/&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Negative lookahead - i.e. find matches of `hello`&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// not followed by either `world` or `hi`&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/hello(?!world|hi)/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;/* Output:
+    XX 
+    helloworld 
+    XXthere 
+    hellohi
+*/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;hr&gt;
+&lt;h3&gt;Word boundaries&lt;/h3&gt;
+&lt;p&gt;Search for &lt;em&gt;occurrences by specifying starting and ending boundaries&lt;/em&gt; using &lt;code class=&quot;language-text&quot;&gt;\b&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;Example:&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// Input string&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; str &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;This bus is isomorphic. It truly is.&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Find occurrences that begins and ends with `is`&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/\bis\b/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// Output: This bus XX isomorphic. It truly XX.&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Negate the search using `\B` - i.e. find occurrences of&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// `is` which is not the beginning&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/\Bis/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// Output: ThXX bus is isomorphic. It truly is.&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// You can use the `\B` at the end as well&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// i.e. find occurrences of `is` which is not the end&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/is\B/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// Output: This bus is XXomorphic. It truly is.&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// You can also combine the negation both at the start &lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// and end of the search. For e.g. find occurrences of &lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// `is` which is not at the beginning or at the end&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// (more like, in the middle)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; str &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;My wallet is missing.&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/\Bis\B/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// Output: My wallet is mXXsing.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;hr&gt;
+&lt;h3&gt;Back-references&lt;/h3&gt;
+&lt;p&gt;Match the &lt;em&gt;same string twice&lt;/em&gt; using back-references.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// Input string&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; str &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;He went to to the mall.&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Match the first `to` followed by a space and a second `to`&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// `\1` is the backreference of the first capture group `(to)`&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// `(?=)` is the positive lookahead to filter to just &lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// the first `to` occurrence&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/(to)\s?(?=\1)/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// Output: He went XXto the mall.&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Applying to real-world scenarios:&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// 1. Clean-up duplicate characters/words&lt;/span&gt;
+str&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;regex&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// Output: He went to the mall.&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// 2. Grab inner content from html tags&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; str &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&amp;lt;div&gt;Hello&amp;lt;/div&gt;&amp;lt;p&gt;World&amp;lt;/p&gt;&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// `(\w+)` -&gt; capture any numbers of characters (cap. grp #1)&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// `(.*)` -&gt; capture any content&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// `\1` -&gt; backreference for cap. grp #1&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/&amp;lt;(\w+)&gt;(.*)&amp;lt;\/\1&gt;/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;/* Output:
+    Hello
+    World
+*/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;hr&gt;
+&lt;h3&gt;Line anchors&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Capture beginning and end of lines&lt;/em&gt; using line anchors.&lt;/p&gt;
+&lt;h3&gt;Example:&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// Input string&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; str &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; 
+  &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;11/2/18
+  11/18/17
+  09/12/18
+  11-10-2018&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Find occurrences of `11` at the beginning of line that also&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// ends with `18` - in other words, pick all the dates in Nov 2018&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// `^` -&gt; beginning indicator vs negation in capture groups&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// `m` -&gt; mult-line flag. Looks for beginning of line&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;//  in multi-lines as well&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/^11.+18$/gm&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;/* Output:
+    XX 
+    11/18/17 
+    09/12/18 
+    XX 
+*/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;hr&gt;
+&lt;h3&gt;🔥 Simple &lt;em&gt;Regex highlighter&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;For the &lt;em&gt;purpose of evaluating various regex patterns&lt;/em&gt;, use the following simple &lt;em&gt;regex highlighter function&lt;/em&gt; in a sample .html file.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// Regex highlighter function&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;output&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;str&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; regex&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; el&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+    el&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;innerHTML &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; str&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;regex&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;str&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt;
+        &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&amp;lt;span&gt;{str}&amp;lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Regex test condition&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; str &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;This is pretty cool!&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; regex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/is/g&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// Call the output fn to highlight pattern matches&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;str&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; regex&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;querySelector&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;pre&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And in the &lt;em&gt;body of the file&lt;/em&gt; use a &lt;code class=&quot;language-text&quot;&gt;&amp;lt;pre&amp;gt;&lt;/code&gt; tag to &lt;em&gt;display the output with some styling to highlight the matches&lt;/em&gt;. For e.g.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;pre&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 20px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token selector&quot;&gt;span&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; dodgerblue&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 1px solid black&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 2px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; white&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;br/&gt;
+&lt;p&gt;🥁 And that’s a wrap on our &lt;em&gt;quick reference guide&lt;/em&gt;. These notes are an &lt;em&gt;inspiration&lt;/em&gt; from &lt;a href=&quot;https://egghead.io/instructors/joe-maddalone&quot;&gt;Joe Maddalone’s&lt;/a&gt; &lt;a href=&quot;https://egghead.io/courses/regex-in-javascript&quot;&gt;egghead Regex series&lt;/a&gt;. His video series is a &lt;em&gt;great resource&lt;/em&gt; to get up to speed on regex in Javascript.&lt;/p&gt;</content:encoded></item></channel></rss>
